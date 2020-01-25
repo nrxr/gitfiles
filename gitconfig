@@ -1,0 +1,28 @@
+[user]
+  name = nrxr
+  email = nrxr@disroot.org
+[alias]
+  ci = commit
+  st = status
+  sta = stash
+  co = checkout
+  br = branch
+[core]
+  editor = nvim
+  pager = diff-highlight | less
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[github]
+  user = nrxr
+[push]
+  default = matching
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
+
+[include]
+  path= ~/.gitconfig-private
