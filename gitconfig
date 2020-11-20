@@ -9,11 +9,19 @@
   br = branch
 [core]
   editor = nvim
-  pager = diff-highlight | less
+  pager = diff-highlight | less -r
 [color]
-  diff = auto
+  ui = always
+  diff = always
   status = auto
   branch = auto
+[color "diff"]
+  commit = green
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
+  whitespace = red reverse
 [github]
   user = nrxr
 [push]
@@ -26,3 +34,5 @@
 
 [include]
   path= ~/.gitconfig-private
+[remote "origin"]
+	prune = true
